@@ -87,7 +87,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("coverImage", { required: true })}
+                  required={register("coverImage", { required: true })}
                 />
                 {errors.image && (
                   <p className="text-red-500 text-sm">Image is required</p>
@@ -104,7 +104,7 @@ function EditBlog() {
                   placeholder="Blog Title"
                   required
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("title", { required: true })}
+                  required={register("title", { required: true })}
                 />
                 {errors.title && (
                   <p className="text-red-500 text-sm">Blog Title is required</p>
@@ -121,7 +121,7 @@ function EditBlog() {
                   placeholder="Reading Time"
                   required
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("readingTime", { required: true })}
+                  required={register("readingTime", { required: true })}
                 />
                 {errors.readingTime && (
                   <p className="text-red-500 text-sm">
@@ -140,7 +140,7 @@ function EditBlog() {
                   placeholder="Tags"
                   required
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("tags", { required: true })}
+                  required={register("tags", { required: true })}
                 />
                 {errors.tags && (
                   <p className="text-red-500 text-sm">
@@ -159,7 +159,7 @@ function EditBlog() {
                   placeholder="Description"
                   required
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("description", { required: true })}
+                  required={register("description", { required: true })}
                 />
                 {errors.description && (
                   <p className="text-red-500 text-sm">Last Name is required</p>
@@ -176,7 +176,7 @@ function EditBlog() {
                   placeholder="State"
                   required
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("state", { required: true })}
+                  required={register("state", { required: true })}
                 />
                 {errors.state && (
                   <p className="text-red-500 text-sm">State is required</p>
@@ -190,7 +190,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("imageOne")}
+                  required={register("imageOne")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleOne" value="Title One" />
@@ -201,7 +201,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Title One"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("titleOne")}
+                  required={register("titleOne")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionOne" value="Description One" />
@@ -212,7 +212,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Description One"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("descriptionOne")}
+                  required={register("descriptionOne")}
                 />
               </div>
               <div>
@@ -223,7 +223,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("imageTwo")}
+                  required={register("imageTwo")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleTwo" value="Title Two" />
@@ -234,7 +234,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Title Two"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("titleTwo")}
+                  required={register("titleTwo")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionTwo" value="Description Two" />
@@ -245,7 +245,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Description Two"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("descriptionTwo")}
+                  required={register("descriptionTwo")}
                 />
               </div>
               <div>
@@ -259,7 +259,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("imageThree")}
+                  required={register("imageThree")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleThree" value="Title Three" />
@@ -270,7 +270,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Title Three"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("titleThree")}
+                  required={register("titleThree")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionThree" value="Description Three" />
@@ -281,7 +281,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Description Three"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("descriptionThree")}
+                  required={register("descriptionThree")}
                 />
               </div>
               <div>
@@ -292,7 +292,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("imageFour")}
+                  required={register("imageFour")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleFour" value="Title Four" />
@@ -303,7 +303,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Title One"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("titleOne")}
+                  required={register("titleOne")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionFour" value="Description Four" />
@@ -314,7 +314,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Description Four"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("descriptionFour")}
+                  required={register("descriptionFour")}
                 />
               </div>
               <div>
@@ -325,7 +325,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("imageFive")}
+                  required={register("imageFive")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleFive" value="Title Five" />
@@ -336,7 +336,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Title Five"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("titleFive")}
+                  required={register("titleFive")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionFive" value="Description Five" />
@@ -347,7 +347,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Description Five"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("descriptionFive")}
+                  required={register("descriptionFive")}
                 />
               </div>
               <div>
@@ -358,7 +358,7 @@ function EditBlog() {
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("imageSix")}
+                  required={register("imageSix")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleSix" value="Title Six" />
@@ -369,7 +369,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Title Six"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("titleSix")}
+                  required={register("titleSix")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionSix" value="Description Six" />
@@ -380,7 +380,7 @@ function EditBlog() {
                   type="text"
                   placeholder="Description Six"
                   // eslint-disable-next-line react/jsx-props-no-spreading
-                  {...register("descriptionSix")}
+                  required={register("descriptionSix")}
                 />
               </div>
             </form>

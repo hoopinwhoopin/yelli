@@ -32,7 +32,7 @@ function Login() {
               <TextInput
                 className="text-black bg-white mt-2"
                 placeholder="Enter Email Address"
-                {...register("email", { required: true })}
+                required={register("email", { required: true })}
               />
             </div>
             <div>
@@ -41,7 +41,7 @@ function Login() {
                 className="text-black bg-white mt-2"
                 placeholder="Enter Password"
                 type="password"
-                {...register("password", { required: true })}
+                required={register("password", { required: true })}
               />
             </div>
             <button

@@ -55,8 +55,7 @@ function PhotoStoryCreate() {
                   name="firstPersonName"
                   type="text"
                   placeholder="First Name"
-                  required
-                  {...register("firstPersonName", { required: true })}
+                  required={register("firstPersonName", { required: true })}
                 />
                 {errors.firstPersonName && (
                   <p className="text-red-500 text-sm">First Name is required</p>
@@ -71,8 +70,7 @@ function PhotoStoryCreate() {
                   name="secondPersonName"
                   type="text"
                   placeholder="Second Name"
-                  required
-                  {...register("secondPersonName", { required: true })}
+                  required={register("secondPersonName", { required: true })}
                 />
                 {errors.secondPersonName && (
                   <p className="text-red-500 text-sm">
@@ -89,8 +87,7 @@ function PhotoStoryCreate() {
                   name="state"
                   type="text"
                   placeholder="State"
-                  required
-                  {...register("state", { required: true })}
+                  required={register("state", { required: true })}
                 />
                 {errors.state && (
                   <p className="text-red-500 text-sm">State is required</p>
@@ -106,7 +103,7 @@ function PhotoStoryCreate() {
                   name="narrativeLink"
                   type="text"
                   placeholder="Link"
-                  {...register("narrativeLink")}
+                  required={register("narrativeLink")}
                 />
               </div>
               <div>
@@ -119,7 +116,7 @@ function PhotoStoryCreate() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("image", { required: true })}
+                  required={register("image", { required: true })}
                 />
                 {errors.image && (
                   <p className="text-red-500 text-sm">Image is required</p>

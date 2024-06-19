@@ -69,7 +69,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("coverImage", { required: true })}
+                  required={register("coverImage", { required: true })}
                 />
                 {errors.image && (
                   <p className="text-red-500 text-sm">Image is required</p>
@@ -84,8 +84,8 @@ function CreateBlogs() {
                   name="title"
                   type="text"
                   placeholder="Blog Title"
-                  required
-                  {...register("title", { required: true })}
+
+                  required={register("title", { required: true })}
                 />
                 {errors.title && (
                   <p className="text-red-500 text-sm">Blog Title is required</p>
@@ -100,8 +100,7 @@ function CreateBlogs() {
                   name="readingTime"
                   type="number"
                   placeholder="Reading Time"
-                  required
-                  {...register("readingTime", { required: true })}
+                  required={register("readingTime", { required: true })}
                 />
                 {errors.readingTime && (
                   <p className="text-red-500 text-sm">
@@ -118,8 +117,7 @@ function CreateBlogs() {
                   name="tags"
                   type="text"
                   placeholder="Tags"
-                  required
-                  {...register("tags", { required: true })}
+                  required={register("tags", { required: true })}
                 />
                 {errors.tags && (
                   <p className="text-red-500 text-sm">
@@ -136,8 +134,7 @@ function CreateBlogs() {
                   name="description"
                   type="text"
                   placeholder="Description"
-                  required
-                  {...register("description", { required: true })}
+                  required={register("description", { required: true })}
                 />
                 {errors.description && (
                   <p className="text-red-500 text-sm">Last Name is required</p>
@@ -152,8 +149,7 @@ function CreateBlogs() {
                   name="state"
                   type="text"
                   placeholder="State"
-                  required
-                  {...register("state", { required: true })}
+                  required={register("state", { required: true })}
                 />
                 {errors.state && (
                   <p className="text-red-500 text-sm">State is required</p>
@@ -166,7 +162,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("imageOne")}
+                  required={register("imageOne")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleOne" value="Title One" />
@@ -176,7 +172,7 @@ function CreateBlogs() {
                   name="titleOne"
                   type="text"
                   placeholder="Title One"
-                  {...register("titleOne")}
+                  required={register("titleOne")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionOne" value="Description One" />
@@ -186,7 +182,7 @@ function CreateBlogs() {
                   name="descriptionOne"
                   type="text"
                   placeholder="Description One"
-                  {...register("descriptionOne")}
+                  required={register("descriptionOne")}
                 />
               </div>
               <div>
@@ -196,7 +192,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("imageTwo")}
+                  required={register("imageTwo")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleTwo" value="Title Two" />
@@ -206,7 +202,7 @@ function CreateBlogs() {
                   name="titleTwo"
                   type="text"
                   placeholder="Title Two"
-                  {...register("titleTwo")}
+                  required={register("titleTwo")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionTwo" value="Description Two" />
@@ -216,7 +212,7 @@ function CreateBlogs() {
                   name="descriptionTwo"
                   type="text"
                   placeholder="Description Two"
-                  {...register("descriptionTwo")}
+                  required={register("descriptionTwo")}
                 />
               </div>
               <div>
@@ -229,7 +225,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("imageThree")}
+                  required={register("imageThree")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleThree" value="Title Three" />
@@ -239,7 +235,7 @@ function CreateBlogs() {
                   name="titleThree"
                   type="text"
                   placeholder="Title Three"
-                  {...register("titleThree")}
+                  required={register("titleThree")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionThree" value="Description Three" />
@@ -249,7 +245,7 @@ function CreateBlogs() {
                   name="descriptionThree"
                   type="text"
                   placeholder="Description Three"
-                  {...register("descriptionThree")}
+                  required={register("descriptionThree")}
                 />
               </div>
               <div>
@@ -259,7 +255,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("imageFour")}
+                  required={register("imageFour")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleFour" value="Title Four" />
@@ -269,7 +265,7 @@ function CreateBlogs() {
                   name="titleOne"
                   type="text"
                   placeholder="Title One"
-                  {...register("titleOne")}
+                  required={register("titleOne")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionFour" value="Description Four" />
@@ -279,7 +275,7 @@ function CreateBlogs() {
                   name="descriptionFour"
                   type="text"
                   placeholder="Description Four"
-                  {...register("descriptionFour")}
+                  required={register("descriptionFour")}
                 />
               </div>
               <div>
@@ -289,7 +285,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("imageFive")}
+                  required={register("imageFive")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleFive" value="Title Five" />
@@ -299,7 +295,7 @@ function CreateBlogs() {
                   name="titleFive"
                   type="text"
                   placeholder="Title Five"
-                  {...register("titleFive")}
+                  required={register("titleFive")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionFive" value="Description Five" />
@@ -309,7 +305,7 @@ function CreateBlogs() {
                   name="descriptionFive"
                   type="text"
                   placeholder="Description Five"
-                  {...register("descriptionFive")}
+                  required={register("descriptionFive")}
                 />
               </div>
               <div>
@@ -319,7 +315,7 @@ function CreateBlogs() {
                 <FileInput
                   id="file-upload-helper-text"
                   helperText="SVG, PNG, JPG or GIF (MAX. 800x400px)."
-                  {...register("imageSix")}
+                  required={register("imageSix")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="titleSix" value="Title Six" />
@@ -329,7 +325,7 @@ function CreateBlogs() {
                   name="titleSix"
                   type="text"
                   placeholder="Title Six"
-                  {...register("titleSix")}
+                  required={register("titleSix")}
                 />
                 <div className="mb-2 block">
                   <Label htmlFor="descriptionSix" value="Description Six" />
@@ -339,7 +335,7 @@ function CreateBlogs() {
                   name="descriptionSix"
                   type="text"
                   placeholder="Description Six"
-                  {...register("descriptionSix")}
+                  required={register("descriptionSix")}
                 />
               </div>
             </form>
